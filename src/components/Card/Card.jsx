@@ -1,18 +1,28 @@
 import './Card.scss';
-import blogImage from '../../assets/image.png';
-import { FaInfo, FaLongArrowAltRight } from 'react-icons/fa';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-const Card = () => {
+const Card = ({ title, image, prevClick, afterClick }) => {
   return (
     <>
+      <button onClick={prevClick}>
+        <IoIosArrowBack />
+      </button>
       <div className="card">
         <div className="cont-img">
-          <img src={blogImage} alt="img-600x400" />
+          <img
+            src={image || 'https://dummyimage.com/600x400/000/fff'}
+            alt="def-img"
+          />
         </div>
         <div className="cont-info">
-          <h4>Titolo del Post</h4>
+          <h4>{title}</h4>
         </div>
       </div>
+      <button onClick={afterClick}>
+        <span>
+          <IoIosArrowForward />
+        </span>
+      </button>
     </>
   );
 };

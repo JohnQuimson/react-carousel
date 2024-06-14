@@ -1,7 +1,19 @@
 .main {
-  background-color: #e5e5e5;
-  height: 80vh;
+  background: rgb(28, 0, 36);
+  background: linear-gradient(
+    143deg,
+    rgba(28, 0, 36, 1) 0%,
+    rgba(41, 24, 58, 1) 9%,
+    rgba(112, 48, 121, 1) 32%,
+    rgba(190, 63, 23, 1) 62%,
+    rgba(255, 164, 0, 1) 88%
+  );
+  height: 90vh;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   .container {
     display: flex;
