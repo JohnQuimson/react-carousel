@@ -1,6 +1,6 @@
 <h1 align="center">
   
- Template REACT
+ react-carousel
   
 </h1>
 
@@ -26,9 +26,19 @@
   <a href="#used-technologies">Used technologies</a> 
 </p>
 
-![Blog Image](src/assets/blog.png)
+![carousel Image](src/assets/carousel.png)
 
 ## Description
+
+Creare un carousel di immagini e testo ispirandosi allo screenshot fornito.
+
+Utilizzate lo stato per determinare quale slide visualizzare.
+Sfruttate l’evento onClick per permettere all’utente di cambiare slide.
+
+### BONUS
+
+- Navigazione tramite bullets
+- Autoplay
 
 ## How To Use
 
