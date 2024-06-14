@@ -40,6 +40,10 @@ const Main = () => {
     );
   };
 
+  const changeBullet = (index) => {
+    setCurrentView(index);
+  };
+
   return (
     <main className="main">
       <div className="container">
@@ -54,7 +58,12 @@ const Main = () => {
 
       <div id="bullets">
         {cardsData.map((data, index) => (
-          <Bullets key={index} active={index === currentView} />
+          <Bullets
+            key={index}
+            active={index === currentView}
+            index={index}
+            onClick={changeBullet}
+          />
         ))}
       </div>
     </main>
