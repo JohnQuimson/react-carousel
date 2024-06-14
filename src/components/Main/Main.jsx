@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Card from '../Card/Card';
 import './Main.scss';
+import Bullets from '../Bullets/Bullets';
 
 const Main = () => {
   const [currentView, setCurrentView] = useState(0);
@@ -49,6 +50,12 @@ const Main = () => {
           prevClick={prevClick}
           afterClick={afterClick}
         />
+      </div>
+
+      <div id="bullets">
+        {cardsData.map((data, index) => (
+          <Bullets key={index} active={index === currentView} />
+        ))}
       </div>
     </main>
   );

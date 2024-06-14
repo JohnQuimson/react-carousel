@@ -1,0 +1,14 @@
+#bullets {
+  display: flex;
+  margin-top: 20px;
+
+  .bullet {
+    font-size: 18px;
+    margin: 0 5px;
+    color: #ffffff;
+
+    .nonActive {
+      color: #7e7e7e;
+    }
+  }
+}
