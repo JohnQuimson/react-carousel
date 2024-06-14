@@ -15,7 +15,7 @@ const Card = ({ title, image, prevClick, afterClick }) => {
           />
         </div>
         <div className="cont-info">
-          <h4>{title}</h4>
+          <h4>{title || 'No title'}</h4>
         </div>
       </div>
       <button onClick={afterClick}>

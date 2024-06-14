@@ -19,7 +19,7 @@ const Main = () => {
       image:
         'https://www.ildrone.net/wp-content/uploads/2022/03/DJI-Matrice-30.jpg',
     },
-    { id: 3, title: 'titolo3', image: '' },
+    { id: 3, title: '', image: '' },
     {
       id: 4,
       title: 'Dji Mavic 3',
